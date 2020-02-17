@@ -1,7 +1,5 @@
 #!/bin/zsh
 
-cd `dirname $0`
-
 export COLCON_HOME=$PWD
 export COLCON_BUILD_PATH=$COLCON_HOME"/build"
 
