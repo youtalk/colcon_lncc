@@ -3,8 +3,7 @@
 export COLCON_HOME=$PWD
 export COLCON_BUILD_PATH=$COLCON_HOME"/build"
 
-colcon_list=$(colcon list -p)
-echo $colcon_list | while read package_dir
+colcon list -p | while read package_dir
 do
   package_cmake=$package_dir"/CMakeLists.txt"
   if [ -e $package_cmake ]; then
